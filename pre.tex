@@ -1,4 +1,4 @@
-\documentclass[a4paper, landscape, article, oneside, norsk, hidelinks,extrafontsizes,14pt]{memoir}
+\documentclass[a4paper, landscape, article, oneside, norsk, hidelinks, extrafontsizes, 14pt]{memoir}
 
 
 %% Encoding
@@ -11,8 +11,8 @@
 
 
 %% Fonts and typography
-\usepackage[final]{microtype}  % Improved typography
-\usepackage[sfdefault,light]{roboto}  %% Option 'sfdefault' only if the base font of the document is to be sans serif
+\usepackage[final]{microtype}
+\usepackage[sfdefault,light]{roboto}
 \usepackage[T1]{fontenc}
 
 
@@ -21,14 +21,16 @@
 \setlength{\parindent}{0pt}
 
 
+%% Adjust margins
 \usepackage{geometry}
 \geometry{margin=0.8in}
+
+
+%% More flexible tables
 \usepackage{tabularx}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
-
-
-\usepackage{marginnote}
 \usepackage{adjustbox}
+
 
 \begin{document}
 \thispagestyle{empty}
