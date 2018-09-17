@@ -118,8 +118,9 @@ def generate_calandar_latex(year, month):
 
 
 if __name__ == '__main__':
-	if len(sys.argv) == 3:
-		generate_calandar_latex(int(sys.argv[1]), int(sys.argv[2]))
+	if len(sys.argv) > 2:
+		for month in sys.argv[2:]:
+			generate_calandar_latex(int(sys.argv[1]), int(month))
 
 	elif len(sys.argv) == 2:
 		for month in range(1, 13):
