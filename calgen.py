@@ -33,18 +33,16 @@ def generate_holydays(year):
 	return holydays
 
 
-
 def to_calendar_entry(date, color=None, additional_text=None):
 	if color:
 		add_color = "\\color{{{}}}".format(color)
 	else:
 		add_color = ""
 
-	# if additional_text:
-	# 	add_additional_text = "{{\\color{{gray}} \\textsuperscript{{{}}}}}".format(additional_text)
-	# else:
-	# 	add_additional_text = ""
-	add_additional_text = ""
+	if additional_text:
+		add_additional_text = "{{\\color{{gray}} \\textsuperscript{{{}}}}}".format(additional_text)
+	else:
+		add_additional_text = ""
 
 	if date == 0:
 		return "\\cellcolor{gray!10}"
